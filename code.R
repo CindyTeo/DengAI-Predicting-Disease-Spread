@@ -4,10 +4,10 @@ library(taRifx)
 
 rm(list=ls())
 
-features.train=read.csv("file:///Users/cindyteo/Desktop/SEMESTER 9/kapita selekta/laporan 2/dengue_features_train.csv", header=TRUE,sep=",")
-features.test=read.csv("file:///Users/cindyteo/Desktop/SEMESTER 9/kapita selekta/laporan 2/dengue_features_test.csv", header=TRUE,sep=",")
-labels.train=read.csv("file:///Users/cindyteo/Desktop/SEMESTER 9/kapita selekta/laporan 2/dengue_labels_train.csv", header=TRUE,sep=",")
-labels.test=read.csv("file:///Users/cindyteo/Desktop/SEMESTER 9/kapita selekta/laporan 2/submission_format.csv", header=TRUE,sep=",")
+features.train=read.csv("dengue_features_train.csv", header=TRUE,sep=",")
+features.test=read.csv("dengue_features_test.csv", header=TRUE,sep=",")
+labels.train=read.csv("dengue_labels_train.csv", header=TRUE,sep=",")
+labels.test=read.csv("submission_format.csv", header=TRUE,sep=",")
 
 features.train = within(features.train, {
   month = as.factor(month)
